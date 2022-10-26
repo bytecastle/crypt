@@ -1,0 +1,26 @@
+id,name,class,style,difficulty,damagetype,damage
+3,Akali,Assasin,7,2,PM,3
+26,Evelynn,Assasin,8,2,M,2
+2,Ahri,Mage,10,2,M,3
+6,Anivia,Mage,10,3,M,3
+25,Elise,Mage-Assasin,7,3,M,2
+30,Fizz,Mage-Assasin,9,3,M,3
+27,Ezreal,Mage-Marksman,6,2,PM,3
+50,Karma,Mage-Support,10,1,M,2
+74,Morgana,Mage-Support,10,1,M,2
+18,Cho Gath,Mage-Warrior,7,1,M,2
+21,Diana,Mage-Warrior,7,1,M,3
+8,Ashe,Marksman,3,1,P,2
+15,Caitlyn,Marksman,2,1,P,3
+11,Bard,Support,7,3,M,1
+12,Blitzcrank,Support,3,1,M,1
+5,Amumu,Tank,9,1,M,2
+63,Leona,Tank,9,1,M,1
+4,Alistar,Tank-Support,7,1,M,1
+14,Braum,Tank-Support,8,2,M,1
+20,Darius,Tank-Warrior,6,2,P,3
+22,Dr.Mundo,Tank-Warrior,6,1,PM,2
+1,Aatrox,Warrior,3,2,P,3
+16,Camille,Warrior,4,3,P,3
+62,Lee Sin,Warrior-Assasin,6,3,P,3
+85,Pantheon,Warrior-Assasin,8,1,P,3
