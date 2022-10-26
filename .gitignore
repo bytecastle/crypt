@@ -1,12 +1,13 @@
-.Rproj.user
-.Rhistory
+**.Rproj.user
+**.Rhistory
 .RData
 .Ruserdata
 app/rsconnect/
 app/www/.DS_Store
+app/app.Rproj
 config/.DS_Store
 data/
-.DS_Store
+**.DS_Store
 crypt.Rproj
 renv/.DS_Store
 renv/settings.dcf
