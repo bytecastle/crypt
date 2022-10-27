@@ -8,13 +8,25 @@ source('ui_layout_body.R')
 dbHeader <- dashboardHeader(
                 title = tags$b("CRYPT"),
                 titleWidth = 328,
-                tags$li(img(src = 'full_logo_white-01.png',
-                            height="40px",
-                            style="margin:10px 540px 0px 100px"),
-                            class = "dropdown"),
-                tags$li(tags$a(href = "https://github.com/bytecastle/crypt2",
-                               img(src = "github_icon.png",height = "35px",
-                                   style="margin:10px")), class = "dropdown")
+                tags$li(
+                  img(
+                    src = 'full_logo_white-01.png',
+                    height="40px",
+                    style="margin:10px"
+                  ),
+                  class = "dropdown"
+                ),
+                tags$li(
+                  tags$a(
+                    href = "https://github.com/bytecastle/crypt2",
+                    img(
+                      src = "github_icon.png",
+                      height = "35px",
+                      style="margin:10px"
+                    )
+                  ),
+                  class = "dropdown"
+                )
 ) #header end
 
 
@@ -105,8 +117,7 @@ ui<-shinydashboardPlus::dashboardPage(
   sidebar,
   body,
   title = "ByteCastle",
-  skin = "black",
-  preloader = list(html = spin_2(), color = "#333e48")
+  skin = "black"
 )
 
 
