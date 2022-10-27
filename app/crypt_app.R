@@ -1,4 +1,5 @@
 # source the helper script which contains required libraries etc.
+source('../_dependencies.R')
 source('crypt_helper.R')
 source('ui_layout_body.R')
 
@@ -19,7 +20,7 @@ dbHeader <- dashboardHeader(
 
 # ---------- SIDEBAR ---------- #
 
-sidebar <- shinydashboardPlus::dashboardSidebar(
+sidebar <- shinydashboard::dashboardSidebar(
   width = 370,
   br(),
   br(),
@@ -42,7 +43,7 @@ sidebar <- shinydashboardPlus::dashboardSidebar(
 
 # ---------- BODY ---------- #
 
-body<-dashboardBody( # body start
+body<-shinydashboard::dashboardBody( # body start
   
   # ---------- INCLUDING CSS & SHINYJS ---------- #
   
@@ -58,7 +59,7 @@ body<-dashboardBody( # body start
   )), #row end for headings
   br(),
   fluidRow(
-    boxPlus(
+    shinydashboard::box(
       #box - design
       solidHeader = FALSE,
       title = NULL,
@@ -77,32 +78,36 @@ body<-dashboardBody( # body start
   
   fluidRow(
     tags$div(id = "title-icon",
-    column(width=9,icon(name="edit"),"Output"),
-    column(width=2,icon("lightbulb-o"),"Tips"))
+    column(width=9,icon(name="th-list", lib="glyphicon"),"Output"),
+    column(width=2,icon("bullhorn"),"Tips"))
   ), 
   br(),
   fluidRow(
-    boxPlus(title = "Expected Output",
+    shinydashboard::box(title = "Expected Output",
             status = "primary",
             width = 9,
             collapsible = FALSE,
             closable = FALSE,
-            height = 400,
+            height = '400px',
             formattableOutput('output_one')),
-    boxPlus(title = NULL,
+    shinydashboard::box(title = NULL,
             status = "primary",
             width = 3,
-            height = 400,
+            height = '400px',
             tags$br(uiOutput('tips_text')))
   )
 ) #1 body end
 
 
 # ---------- UI ---------- #
-ui<-dashboardPagePlus(dbHeader,sidebar,body,skin = "black",
-                      enable_preloader = TRUE,
-                      sidebar_fullCollapse = TRUE,
-                      title = "ByteCastle")
+ui<-shinydashboardPlus::dashboardPage(
+  dbHeader,
+  sidebar,
+  body,
+  title = "ByteCastle",
+  skin = "black",
+  preloader = list(html = spin_2(), color = "#333e48")
+)
 
 
 # ---------- SERVER ---------- #
