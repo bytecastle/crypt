@@ -12,7 +12,7 @@ translation_ui_func<-function(){
       width = 7,
      tags$div(class = 'intro','Translate From'),
      br(),
-     boxPlus(
+     box(
         solidHeader = FALSE,
         title = NULL,
         background = "blue",
@@ -24,7 +24,7 @@ translation_ui_func<-function(){
      ),
      tags$div(class = 'intro','Translate To'),
      br(),
-     boxPlus(
+     box(
         solidHeader = FALSE,
         title = NULL,
         background = "blue",
