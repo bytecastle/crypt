@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.2.1
+FROM rocker/r-ubuntu:20.04
 
 LABEL maintainer="Sasha DCosta <bytecastle2019@gmail.com>"
 
@@ -33,3 +33,5 @@ RUN chown app:app -R /home/app
 USER app
 
 EXPOSE 3838
+
+CMD ["R", "-e", "shiny::runApp('crypt_app.R')"]
