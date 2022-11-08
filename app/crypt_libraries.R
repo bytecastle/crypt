@@ -1,0 +1,15 @@
+# ---------- LIBRARIES ---------#
+# Loading of packages
+library(tidyverse)
+library(shinydashboard)
+library(shinydashboardPlus)
+library(data.table)
+library(yaml)
+library(glue)
+library(shinythemes)
+library(shinyWidgets)
+library(shinyjs)
+library(DT)
+library(formattable)
+library(reticulate)
+library(waiter)
