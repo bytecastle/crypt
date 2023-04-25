@@ -1,5 +1,5 @@
 # source the helper script which contains required libraries etc.
-source('crypt_libraries.R')
+source('../_dependencies.R')
 source('crypt_helper.R')
 source('ui_layout_body.R')
 
@@ -18,7 +18,7 @@ dbHeader <- dashboardHeader(
                 ),
                 tags$li(
                   tags$a(
-                    href = "https://github.com/bytecastle/crypt2",
+                    href = "https://github.com/bytecastle/crypt",
                     img(
                       src = "github_icon.png",
                       height = "35px",
