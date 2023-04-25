@@ -18,7 +18,7 @@ dbHeader <- dashboardHeader(
                 ),
                 tags$li(
                   tags$a(
-                    href = "https://github.com/bytecastle/crypt2",
+                    href = "https://github.com/bytecastle/crypt",
                     img(
                       src = "github_icon.png",
                       height = "35px",
