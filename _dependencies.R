@@ -55,11 +55,6 @@ if (!require("formattable")){
   library(formattable)
 }
 
-if (!require("reticulate")){
-  install.packages("reticulate",dependencies = T)
-  library(reticulate)
-}
-
 if (!require("waiter")){
   install.packages("waiter",dependencies = T)
   library(waiter)

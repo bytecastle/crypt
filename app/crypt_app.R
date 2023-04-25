@@ -1,5 +1,4 @@
 # source the helper script which contains required libraries etc.
-source('../_dependencies.R')
 source('crypt_helper.R')
 source('ui_layout_body.R')
 
