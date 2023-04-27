@@ -8,7 +8,6 @@ app/app.Rproj
 config/.DS_Store
 data/
 **.DS_Store
-crypt.Rproj
 renv/.DS_Store
 renv/settings.dcf
 renv/library/
@@ -20,4 +19,3 @@ renv/sandbox/
 renv/staging/
 renv/.gitignore
 .Rproj.user
-
