@@ -3,7 +3,8 @@ library(R6)
 Translator <- R6Class(
   classname = "Translator",
   public = list(
-    languages = unique(cryptdata$lang),
+    cryptdf = NULL,
+    languages = NULL,
     lang_pack = function(x) {
       switch (
         x,
